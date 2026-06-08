@@ -16,8 +16,8 @@ let package = Package(
   targets: [
     .binaryTarget(
       name: "BanubaDesignSystem",
-      url: "https://nexus.banuba.net/repository/ios-frameworks/ios/frameworks/BanubaDesignSystem/1.0.1/BanubaDesignSystem-1.0.1.xcframework.zip",
-      checksum: "c2db82b6495d5adad1206997c33364cbb050a09eb6930385373a0eddc7f2410a"
+      url: "https://nexus.banuba.net/repository/ios-frameworks/ios/frameworks/BanubaDesignSystem/1.0.0-beta.0/BanubaDesignSystem-1.0.0-beta.0.xcframework.zip",
+      checksum: "bb21bf34a8ff14be9ff992f95e8a239be281a03a071e2a7046160f7eaf38d757"
     )
   ]
 )
