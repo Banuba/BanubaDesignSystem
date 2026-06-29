@@ -14,10 +14,17 @@ let package = Package(
     )
   ],
   targets: [
+    // Local development uses the path-based binaryTarget below.
+    // Release flow (fastlane patch_package_swift_for_nexus) replaces it in the GitHub distribution repo with:
+    // .binaryTarget(
+    //   name: "BanubaDesignSystem",
+    //   url: "https://nexus.banuba.net/repository/ios-frameworks/ios/frameworks/BanubaDesignSystem/{version}/BanubaDesignSystem-{version}.xcframework.zip",
+    //   checksum: "{computed at release}"
+    // )
     .binaryTarget(
-  name: "BanubaDesignSystem",
-  url: "https://nexus.banuba.net/repository/ios-frameworks/ios/frameworks/BanubaDesignSystem/1.0.0/BanubaDesignSystem-1.0.0.xcframework.zip",
-  checksum: "b523da2af88da6fbc620b7f17605d18447cb3a118c686d79dfac77a9590e9cb1"
-)
+      name: "BanubaDesignSystem",
+      url: "https://nexus.banuba.net/repository/ios-frameworks/ios/frameworks/BanubaDesignSystem/1.0.2/BanubaDesignSystem-1.0.2.xcframework.zip",
+      checksum: "dc94ef1b87036bd2c1ad534b9d069beaad53a6eba93b458c40c1f1b9ca867cad"
+    )
   ]
 )
